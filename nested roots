@@ -1,0 +1,19 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		int n = 49;
+		double s = n;
+		
+		while(n > 0)
+		{
+			s = Math.Sqrt(s);
+			s += n - 1;
+			n--;
+		}
+		
+		Console.WriteLine(s);
+	}
+}
